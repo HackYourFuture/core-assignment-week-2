@@ -20,6 +20,14 @@ function showMessage(message, type) {
   modal.classList.remove('hidden');
 }
 
+function errorMessage(message) {
+  showMessage(message, 'error');
+}
+
+function successMessage(message) {
+  showMessage(message, 'success');
+}
+
 function hideModal() {
   const modal = document.getElementById('modal');
   modal.classList.add('hidden');
@@ -70,4 +78,4 @@ function setupEventListeners() {
 
 setupEventListeners();
 
-export { showMessage };
+export { errorMessage, successMessage };

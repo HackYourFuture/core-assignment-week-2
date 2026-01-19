@@ -1,5 +1,5 @@
 // Do not change the line below
-import { showMessage } from './app.js';
+import { errorMessage, successMessage } from './app.js';
 
 let incorrectAttempts = 0;
 
