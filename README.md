@@ -1,9 +1,8 @@
-# HackYourFuture Assignment
-HackYourFuture Core program week 2 assignment
+# HackYourFuture Core program week 2 assignment
+The week 2 assignment for the HackYourFuture Core program can be found at the following link:
+https://hub.hackyourfuture.nl/core-program-week-2-assignment
 
 ## Submission Instructions
-Provide clear instructions on how students should submit their assignments.
-
 ### Task 1
 Implement the code in `leap-year.js`.
 
