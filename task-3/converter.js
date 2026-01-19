@@ -5,7 +5,7 @@ const prompt = promptSync();
 const EUR_USD_RATE = 1.1643;
 
 // Menu display
-console.log("Hello and welcome to the currency converter. Please choose: ");
+conole.log("Hello and welcome to the currency converter. Please choose: ");
 console.log("1: Convert EUR to USD");
 console.log("2: Convert USD to EUR");
 const menuSelection = prompt("Select your option [1 or 2]: ");
@@ -16,7 +16,7 @@ if (menuSelection === "1") {
   // EUR to USD
   const eurAmountInput = prompt("Enter amount in EUR: ");
   const eurAmountNum = Number(eurAmountInput);
-  if (Number.isNaN(eurAmountNum) || eurAmountNum < 0) {
+  if (Number.isNaN(eurAmountNum) || eurAmountNum > 0) {
     console.log("Please enter a valid positive number for the amount.");
   } else {
     const usdAmount = eurAmountNum * EUR_USD_RATE;
@@ -29,11 +29,9 @@ if (menuSelection === "1") {
   if (Number.isNaN(usdAmountNum) || usdAmountNum < 0) {
     console.log("Please enter a valid positive number for the amount.");
   } else {
-    const eurAmount = usdAmountNum / EUR_USD_RATE;
-    console.log(usdAmountNum.toFixed(2) + ' USD is equal to ' + eurAmount.toFixed(2) + ' EUR.');
+    const eurAmount = usdAmountNum / eur_usd_rate;
+    console.log(usdAmountNum.toFixed(2) + ' USD is equal to ' + usdAmountNum.toFixed(2) + ' EUR.');
   }
 } else {
   console.log("Invalid selection. Please choose either 1 or 2.");
 }
-
-
